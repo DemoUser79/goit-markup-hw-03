@@ -73,14 +73,26 @@ body {
 }
 
 .container {
+    outline: 1px solid red;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     width: 1158px;
-} 
+}
+
+.heder-container {
+    display: flex;
+}
+
+.main-nav {
+    margin-right: auto;
+    display: flex;
+}
 
 .logotype {
+    margin-right: 76px;
+    align-items: center;
     font-family: var(--second-font-family);
     font-weight: 800;
     font-size: 18px;
@@ -96,9 +108,12 @@ body {
     color: #2E2F42;
 }
 
+.menu {
+    gap: 40px;
+    display: flex;
+}
+
 .menu-link {
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -113,6 +128,11 @@ body {
 
 .contacts-address {
     font-style: normal;
+}
+
+.address-menu {
+    gap: 40px;
+    display: flex;
 }
 
 .contact-e-mail {
@@ -151,6 +171,8 @@ body {
 }
 
 .main-title {
+    margin: 0 auto;
+    max-width: 496px;
     margin-top: 0;
     margin-bottom: 48px;
     font-size: 56px;
@@ -190,6 +212,11 @@ body {
     padding-bottom: 120px;
 }
 
+.principles-list {
+    gap: 24px;
+    display: flex;
+}
+
 .principles-text {
     margin-top: 0;
     margin-bottom: 0;
@@ -215,6 +242,11 @@ body {
     text-transform: capitalize;
 }
 
+.about-list {
+    gap: 24px;
+    display: flex;
+}
+
 /*============================== OUR TEAM =======*/
 
 .team {
@@ -231,6 +263,11 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+}
+
+.team-list {
+    gap: 24px;
+    display: flex;
 }
 
 .team-item {
@@ -273,6 +310,7 @@ body {
 }
 
 .footer-text {
+    max-width: 264px;
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -292,12 +330,15 @@ body {
 }
 
 .portfolio-list {
+    justify-content: center;
+    gap: 24px;
+    display: flex;
     margin-bottom: 72px;
 }
 
--btn {
+.portfolio-btn {
     padding: 12px 24px;
-    display: inline-block;
+    display: block;
     min-width: 69px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
@@ -305,7 +346,6 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
@@ -320,9 +360,19 @@ body {
     background-color: #404BBF;
 }
 
+.job-list {
+    flex-wrap: wrap;
+    display: flex;
+}
+
 .job-item {
+    max-width: 360px;
     background: #FFFFFF;
     border: 1px solid #E7E9FC;
+}
+
+.job-item:not(:nth-child(3n + 3)) {
+    margin-right: 24px;
 }
 
 .job-text {
