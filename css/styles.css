@@ -27,6 +27,8 @@ img {
 }
 
 body {
+    margin: 0 auto;
+    width: 1440px;
     font-family: 'Roboto',
             sans-serif;
     color: #2E2F42;
@@ -67,13 +69,13 @@ body {
 /* ============================= HEADER ======= */
 
 .main-header {
+    border-bottom: 1px solid #E7E9FC;
     background-color: #FFFFFF;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
 .container {
-    outline: 1px solid red;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -94,6 +96,7 @@ body {
     margin-right: 76px;
     align-items: center;
     font-family: var(--second-font-family);
+    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -105,6 +108,7 @@ body {
 }
 
 .header-logo-part {
+    display: inline-block;
     color: #2E2F42;
 }
 
@@ -182,6 +186,8 @@ body {
 }
 
 .modal-btn {
+    min-width: 169px;
+    height: 56px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -215,6 +221,10 @@ body {
 .principles-list {
     gap: 24px;
     display: flex;
+}
+
+.principles-item {
+    max-width: 264px;
 }
 
 .principles-text {
@@ -301,18 +311,27 @@ body {
     background-color: var(--dark-background-color);
 }
 
-.logotype {
+.footer-logotype {
+    font-family: var(--second-font-family);
     display: inline-block;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
 }
 
 .footer-logo-part {
+    display: inline-block;
     color: #F4F4FD;
 }
 
 .footer-text {
     max-width: 264px;
     padding-bottom: 0;
-    margin-top: 0;
+    margin-top: 16;
     margin-bottom: 0;
     font-size: 16px;
     line-height: 1.5;
@@ -325,8 +344,6 @@ body {
 .portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
-
-    outline: 1px solid tomato;
 }
 
 .portfolio-list {
@@ -339,6 +356,7 @@ body {
 .portfolio-btn {
     padding: 12px 24px;
     display: block;
+    height: 48px;
     min-width: 69px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
@@ -368,11 +386,14 @@ body {
 .job-item {
     max-width: 360px;
     background: #FFFFFF;
-    border: 1px solid #E7E9FC;
 }
 
 .job-item:not(:nth-child(3n + 3)) {
     margin-right: 24px;
+}
+
+.job-item:nth-child(-n + 6) {
+    margin-bottom: 48px;
 }
 
 .job-text {
@@ -385,7 +406,9 @@ body {
 }
 
 .box-suptitle-text {
+    border-left: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
     padding: 32px 16px;
 }
-
 
